@@ -1,8 +1,9 @@
 import type { FC } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
-import ProtectedRoute from "./components/route/protected.route";
+import ProtectedRoute from "./components/route/protected";
 import routes from "constants/routes";
+import NotFound from "view/notFound";
 
 
 
@@ -11,7 +12,7 @@ const AppRouter: FC = () =>
         {routes.map(({ path, Element, isNeedAuth }) =>
             <Route key={path} path={path} element={isNeedAuth ? <ProtectedRoute element={<Element />} /> : <Element />} />
         )}
-        <Route path="*" element={<Navigate to="/login" />} />
+        <Route path="*" element={<NotFound />} />
     </Routes>;
 
 export default AppRouter;

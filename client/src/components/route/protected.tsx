@@ -12,7 +12,7 @@ interface ProtectedRouteProps {
 
 const ProtectedRoute: FC<ProtectedRouteProps> = ({ element }) => {
     const isAuth = useAppSelector(authSelector);
-    return !isAuth ? <Navigate to="/login" /> : element;
+    return !isAuth ? <Navigate to="/" /> : element;
 };
 
 export default ProtectedRoute;

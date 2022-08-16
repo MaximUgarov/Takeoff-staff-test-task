@@ -5,7 +5,7 @@ const Contacts = lazy(() => import("view/contacts"));
 
 
 export default [{
-    path: "login",
+    path: "/",
     Element: Authorization,
     isNeedAuth: false
 },

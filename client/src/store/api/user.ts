@@ -15,8 +15,12 @@ export const userApi = createApi({
             query: () => "/660/user",
             providesTags: ["User"],
             async onQueryStarted(_args, { dispatch, queryFulfilled }) {
-                const { data } = await queryFulfilled;
-                dispatch(userSlice.actions.setUser(data));
+                try {
+                    const { data } = await queryFulfilled;
+                    dispatch(userSlice.actions.setUser(data));
+                } catch (error) {
+                    dispatch(userSlice.actions.logout());
+                }
             },
         })
     })
