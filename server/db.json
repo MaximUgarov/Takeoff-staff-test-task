@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "email": "test@mail.ru",
+      "password": "$2a$10$sFDeoxhITfnV2EaXGOUwMeb5oMaWg//o.HjhhObnLbaM3/dFrbC4S",
+      "id": 1
+    }
+  ],
+  "user": {
+    "email": "test@mail.ru",
+    "id": 1
+  },
+  "contacts": [
+    {
+      "email": "max@mail.ru",
+      "name": "name",
+      "number": "7955234534534",
+      "id": 1
+    }
+  ]
+}
