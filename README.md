@@ -1,6 +1,7 @@
 ### Тестовое задание на вакансию Front-end Developer
 
 [Вакансия](https://hh.ru/vacancy/68406900?hhtmFrom=chat)
+
 [Резюме](https://hh.ru/resume/34c40e4dff0b0c17950039ed1f467757324430)
 
 > Разработка велась на версии node.js 18.5.0
